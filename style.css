@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/bg-daniel.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+body * {
+  font-family: "inter", sans-serif;
+  color: white;
+}
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+
+  padding: 0 4%;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* links */
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0;
+}
+
+ul li a {
+  border: 1px solid;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 24px;
+
+  background-color: rgba(171, 171, 170, 0.323);
+  border: 1px solid rgba(97, 96, 95, 0.252);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.5s;
+}
+
+/* pseudo-selector */
+ul li a:hover {
+  background-color: rgba(233, 232, 226, 0.15);
+  border: 1.5px solid wheat;
+}
+
+/*social-links*/
+#social-links {
+  display: flex;
+  justify-content: center;
+
+  padding: 24px 0;
+
+  font-size: 28px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+
+  transition: background 0, 2;
+}
+
+#social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.249);
+}
